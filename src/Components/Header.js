@@ -1,14 +1,21 @@
+import { useDispatch } from "react-redux";
+import { toggleMenu } from "../utils/appSlice";
 const Header = () => {
+  const dispatch = useDispatch();
+  const handleToggleMenu = () => {
+    dispatch(toggleMenu());
+  };
   return (
     <div className="mx-4 flex justify-between shadow-lg">
       <div className="flex my-auto w-1/12 p-4">
         <img
-          className="w-10  m-4 "
+          className="w-10  m-4 cursor-pointer "
           alt="hamburger-icon"
           src="https://cdn-icons-png.flaticon.com/128/9663/9663120.png"
+          onClick={handleToggleMenu}
         />
         <img
-          className="w-10  m-4"
+          className="w-10  m-4 cursor-pointer"
           alt="youtube-logo"
           src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
         />
