@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="mx-4 flex justify-between">
+    <div className="mx-4 flex justify-between shadow-lg">
       <div className="flex my-auto w-1/12 p-4">
         <img
           className="w-10  m-4 "
