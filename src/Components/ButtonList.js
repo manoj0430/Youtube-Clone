@@ -11,6 +11,9 @@ const ButtonList = () => {
     "Trending",
     "International",
     "National",
+    "Podcasts",
+    "Coding",
+    "Android",
   ];
   return (
     <div className="flex">
